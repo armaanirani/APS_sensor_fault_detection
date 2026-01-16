@@ -4,7 +4,23 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "catboost>=1.2.8",
+    "hyperopt>=0.2.7",
+    "imblearn>=0.0",
+    "ipykernel>=7.1.0",
+    "kneed>=0.8.5",
+    "lightgbm>=4.6.0",
+    "matplotlib>=3.10.8",
+    "miceforest>=6.0.5",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
+    "pymongo>=4.16.0",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "setuptools>=80.9.0",
+    "xgboost>=3.1.2",
+]
 
 
 [tool.setuptools.packages.find]
