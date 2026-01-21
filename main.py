@@ -1,18 +1,18 @@
-from src.sensor.exception import SensorException
-from src.sensor.logger import logging
+from src.exception import SensorException
+from src.logger import logging
+from src.utils import dump_csv_file_to_mongodb_collection
 import sys
 import os
 
-def test_exception():
-    try:
-        logging.info("starting")
-        a = 1/0
-    except Exception as e:
-        raise SensorException(e, sys)
 
 
 if __name__ == "__main__":
-    try:
-        test_exception()
-    except Exception as e:
-        print(e)
+    file_path = r"C:\CS\kish naik\APS_sensor_fault_detection\aps_failure_training_set1.csv"
+    database_name = "aps"
+    collection_name = "sensor"
+    
+    dump_csv_file_to_mongodb_collection(
+        file_path=file_path, 
+        database_name=database_name, 
+        collection_name=collection_name
+    )

@@ -13,3 +13,6 @@ wheels/
 
 # Logging folder
 logs/
+
+# environment variables
+.env
